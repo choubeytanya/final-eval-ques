@@ -1,0 +1,71 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f2eded61;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  padding: 25px;
+  text-decoration: none;
+}
+nav h3 {
+  padding: 15px;
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: red;
+}
+
+/* main section */
+main {
+  text-align: center;
+}
+main .first {
+  font-size: 25px;
+}
+main .sec {
+  font-size: 3em;
+}
+spam {
+  color: red;
+}
+
+/* section Portion */
+section {
+  background-color: #f2eded61;
+  margin-top: 40px;
+  text-align: center;
+}
+section div {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+img {
+  vertical-align: middle;
+  height: 250px;
+  width: 300px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer h6 {
+  font-size: 10px;
+  color: #8b8787;
+}

@@ -1,0 +1,371 @@
+@media (min-width: 920px) and (max-width: 1240px) {
+  .header {
+    .items {
+      width: 200px;
+      .select {
+        .button {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  .about {
+    .content {
+      width: 60%;
+      margin: 30px 10px 30px 8px;
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 855px) and (max-width: 920px) {
+  .header {
+    .items {
+      width: 200px;
+      .select {
+        .button {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  .about {
+    top: 2350px;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    .content {
+      width: 60%;
+      margin: 30px 10px 30px 8px;
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+  .customer {
+    top: 2700px;
+  }
+  footer {
+    top: 3400px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 855px) {
+  .header {
+    .items {
+      width: 200px;
+      .select {
+        .button {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  .about {
+    top: 2400px;
+    height: 300px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    .content {
+      width: 60%;
+      height: 300px;
+      margin: 30px 10px 30px 8px;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        margin: 20px 0;
+        font-size: 13px;
+      }
+    }
+  }
+  .customer {
+    top: 2660px;
+  }
+  footer {
+    top: 3320px;
+    .footer {
+      font-size: 10px;
+    }
+  }
+  .card {
+    width: 400px;
+    .pic {
+      height: 130px;
+    }
+  }
+  .touch {
+    .con {
+      width: 47%;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .header {
+    .items {
+      width: 200px;
+      margin: 15px 15px;
+      .select {
+        .button {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  .section {
+    margin: 100px;
+    h2 {
+      font-size: 80px;
+    }
+  }
+  .about {
+    top: 2827px;
+    height: 300px;
+    img {
+      width: 172px;
+      height: 172px;
+    }
+    .content {
+      width: 60%;
+      height: 255px;
+      margin: 30px 10px 30px 8px;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        margin: 20px 0;
+        font-size: 13px;
+      }
+    }
+  }
+  .customer {
+    top: 3070px;
+  }
+  footer {
+    top: 3810px;
+    .footer {
+      font-size: 10px;
+      .midfooter {
+        width: 180px;
+      }
+    }
+  }
+  .card {
+    width: 400px;
+    .pic {
+      height: 150px;
+    }
+  }
+  .touch {
+    .con {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 280px) and (max-width: 424px) {
+  .container::before {
+    height: 330px;
+  }
+  .main {
+    .left {
+      img {
+        height: 37px;
+        width: 38px;
+      }
+    }
+    .middle {
+      font-size: 12px;
+    }
+    .right {
+      img {
+        height: 17px;
+        width: 17px;
+        margin: 0 4px;
+      }
+    }
+  }
+  .header {
+    top: 310px;
+    .items {
+      width: 200px;
+      margin: 6px 6px;
+      .select {
+        .button {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  .section {
+    margin: 5px;
+    width: 97%;
+    h2 {
+      font-size: 40px;
+    }
+    button {
+      width: 150px;
+    }
+  }
+  .about {
+    top: 4230px;
+    height: 385px;
+    img {
+      width: 125px;
+      height: 186px;
+    }
+    .content {
+      width: 48%;
+      height: 370px;
+      margin: 4px 5px 4px 8px;
+      h2 {
+        font-size: 15px;
+      }
+      p {
+        margin: 10px 0;
+        font-size: 13px;
+      }
+    }
+  }
+  .customer {
+    top: 4550px;
+    h2 {
+      font-size: 15px;
+    }
+  }
+  footer {
+    top: 5315px;
+    .footer {
+      font-size: 10px;
+      .midfooter {
+        width: 115px;
+        margin:10px;
+      }
+    }
+  }
+  .card {
+    width: 260px;
+    margin: 15px auto;
+    .pic {
+      height: 87px;
+    }
+    img {
+      height: 65px;
+      width: 75px;
+    }
+    .detail {
+      padding: 4px;
+    }
+  }
+}
+.touch {
+  .con {
+    width: 60%;
+  }
+}
+
+@media (min-width: 424px) and (max-width: 500px) {
+    .container::before {
+      height: 330px;
+    }
+    .main {
+      .left {
+        img {
+          height: 37px;
+          width: 38px;
+        }
+      }
+      .middle {
+        font-size: 12px;
+      }
+      .right {
+        img {
+          height: 17px;
+          width: 17px;
+          margin: 0 4px;
+        }
+      }
+    }
+    .header {
+      top: 310px;
+      .items {
+        width: 200px;
+        margin: 6px 6px;
+        .select {
+          .button {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+    .section {
+      margin: 5px;
+      width: 97%;
+      h2 {
+        font-size: 40px;
+      }
+      button {
+        width: 150px;
+      }
+    }
+    .about {
+      top: 2340px;
+      height: 365px;
+      img {
+        width: 197px;
+        height: 210px;
+      }
+      .content {
+        width: 48%;
+        height: 370px;
+        margin: 4px 5px 4px 8px;
+        h2 {
+          font-size: 15px;
+        }
+        p {
+          margin: 10px 0;
+          font-size: 13px;
+        }
+      }
+    }
+    .customer {
+      top: 2640px;
+      h2 {
+        font-size: 15px;
+      }
+    }
+    footer {
+      top: 3270px;
+      .footer {
+        font-size: 10px;
+        .midfooter {
+          width: 180px;
+        }
+      }
+    }
+    .card {
+      width: 260px;
+      margin: 15px auto;
+      .pic {
+        height: 87px;
+      }
+      img {
+        height: 65px;
+        width: 75px;
+      }
+      .detail {
+        padding: 4px;
+      }
+    }
+  }
+  .touch {
+    .con {
+      width: 60%;
+    }
+  }

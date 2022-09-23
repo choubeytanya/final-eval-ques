@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+.form {
+  border: 2px solid red;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  .form-container {
+    width: 24%;
+    border: 2px solid green;
+    margin: 10px auto;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+    visibility: hidden;
+  position: relative;
+  &::after {
+    width:84px;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "table view";
+  }
+}
+
+.checkbox:checked~.container{
+    flex-direction: column;
+    .form-container{
+        width: 100%;
+        display:flex;
+        .form-element{
+            display:flex;
+            flex-direction: column;
+            margin:0 auto;
+        }
+    }
+}

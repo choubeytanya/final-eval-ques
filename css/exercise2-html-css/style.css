@@ -1,0 +1,85 @@
+body{
+    font-family:Arial;
+  }
+  
+  /* header portion */
+  header{
+    height:120px;
+    background-color:#b4b4b4;
+  }
+  header h1{
+      color:black;
+    font-weight:36px;
+  }
+  
+  /* navigation bar */
+  nav{
+      width:850px;
+      height:50px;
+      margin:auto;
+      margin-top:15px;
+      border-radius:10px;
+      background-image:linear-gradient(#2e5e89,#5098da); 
+        }
+  nav ul{
+       display:flex;
+      list-style:none;
+  }
+  .anchor{ 
+    color:white;
+      text-decoration:none;
+      padding:25px;
+      font-size:14px;
+  }
+  /* section protion */
+  section{
+      border:2px solid #b4b4b4;
+      display:flex;
+       padding:20px;
+      width:850px;
+      border-radius:10px;
+      margin:auto;
+    margin-top:16px;
+  }
+  main{
+      margin:auto;
+  }
+  main h2{
+      font-size:24px;
+      margin:9px;
+  }
+  main p{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image:url(https://media.istockphoto.com/vectors/blue-certificate-of-appreciation-border-vector-id1156086610?k=20&m=1156086610&s=612x612&w=0&h=u_GfWkCh2vYtG4hTY-jW4tO-VYNJGy30hnAebjKUzy4=) 30 stretch;
+    width:340px;
+    height:220px;
+    border-left-width:20px;
+    border-top-width:20px;
+    border-right-width:10px;
+    border-bottom-width:20px;
+  }
+  .para{
+    column-count: 3;
+    padding-left:20px;
+    margin:30px;
+    margin-left:100px;
+    margin-right:100px;
+  }
+  /* footer section */
+  footer{
+      background-color:black;
+      width:100%;
+      height:120px;
+  }
+  footer h2{
+  color:white;
+  font-size:36px;
+  margin:auto;
+  }
+  /* common properties */
+  .flex_property{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }

@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container::before {
+  content: "";
+  background: url(background3.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  z-index: -1; }
+
+.main {
+  height: 40px;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  flex-grow: 1;
+  align-items: center; }
+  .main .left img {
+    height: 60px;
+    width: 60px; }
+  .main .middle {
+    margin: 0 auto;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 25px; }
+  .main .right img {
+    height: 30px;
+    width: 30px;
+    margin: 0 15px; }
+
+.section {
+  width: 50%;
+  text-align: left;
+  margin: auto 200px;
+  position: absolute; }
+  .section h2 {
+    font-family: "Mea Culpa", cursive;
+    font-size: 150px;
+    font-weight: lighter; }
+  .section p {
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  .section button {
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 20px; }
+
+.header {
+  padding-top: 20px;
+  width: 100%;
+  position: absolute;
+  top: 700px;
+  text-align: center; }
+  .header h2 {
+    font-size: 45px;
+    font-weight: bold; }
+  .header .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .header .items {
+    border: 1px solid black;
+    height: 296px;
+    width: 280px;
+    text-align: center;
+    margin: 40px 15px; }
+    .header .items img {
+      height: 200px;
+      width: 200px; }
+    .header .items .select {
+      display: flex;
+      background-color: black;
+      height: 50px;
+      color: white; }
+      .header .items .select button {
+        border: 2px solid black;
+        border-radius: 28px;
+        height: 30px;
+        width: 84px;
+        margin: auto 3px; }
+      .header .items .select p {
+        align-self: center;
+        margin-left: 30px; }
+  .header .more {
+    width: 160px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px; }
+
+.about {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 2000px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about .content {
+    width: 30%;
+    height: 380px;
+    margin: 30px 10px 30px 300px; }
+    .about .content h2 {
+      font-size: 40px; }
+    .about .content p {
+      margin: 20px 0;
+      font-size: 20px; }
+    .about .content button {
+      width: 160px;
+      height: 40px;
+      background-color: black;
+      color: white;
+      border-radius: 5px; }
+  .about img {
+    width: 380px;
+    height: 380px; }
+
+.customer {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 2400px;
+  text-align: center;
+  margin-top: 80px; }
+  .customer h2 {
+    font-size: 40px;
+    font-size: arial; }
+
+.card {
+  box-shadow: 2px 2px 5px 5px #9d9dc3;
+  border: 2px solid black;
+  width: 40%;
+  margin: 50px auto;
+  display: flex;
+  height: 200px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center; }
+  .card .pic {
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: bisque; }
+  .card img {
+    height: 100px;
+    width: 100px; }
+  .card .detail {
+    text-align: left;
+    padding: 20px;
+    font-size: 14px; }
+
+.arrow .leftArrow,
+.arrow .rightArrow {
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 2px 2px #9d9dc3;
+  border-radius: 50%; }
+
+.touch {
+  margin-top: 40px; }
+  .touch .con {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    margin-right: 80px;
+    padding: 12px; }
+  .touch .contactform {
+    width: 140px;
+    height: 44px;
+    background-color: black;
+    color: white; }
+  .touch .newletter {
+    width: 140px;
+    height: 44px;
+    background-color: bisque; }
+
+footer {
+  position: absolute;
+  top: 3100px;
+  width: 100%; }
+  footer img {
+    width: 100%; }
+
+.footer {
+  align-items: center;
+  height: 300px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around; }
+  .footer h3 {
+    margin-bottom: 15px; }
+  .footer .midfooter {
+    text-align: center;
+    width: 400px; }
+    .footer .midfooter h2,
+    .footer .midfooter p,
+    .footer .midfooter div,
+    .footer .midfooter hr {
+      margin-bottom: 15px; }
+    .footer .midfooter div p {
+      display: inline;
+      margin-right: 10px; }
+
+@media (min-width: 920px) and (max-width: 1240px) {
+  .header .items {
+    width: 200px; }
+    .header .items .select .button {
+      font-size: 9px; }
+
+  .about .content {
+    width: 60%;
+    margin: 30px 10px 30px 8px; }
+    .about .content h2 {
+      font-size: 30px; } }
+@media (min-width: 855px) and (max-width: 920px) {
+  .header .items {
+    width: 200px; }
+    .header .items .select .button {
+      font-size: 9px; }
+
+  .about {
+    top: 2350px; }
+    .about img {
+      width: 300px;
+      height: 300px; }
+    .about .content {
+      width: 60%;
+      margin: 30px 10px 30px 8px; }
+      .about .content h2 {
+        font-size: 30px; }
+
+  .customer {
+    top: 2700px; }
+
+  footer {
+    top: 3400px; } }
+@media (min-width: 700px) and (max-width: 855px) {
+  .header .items {
+    width: 200px; }
+    .header .items .select .button {
+      font-size: 9px; }
+
+  .about {
+    top: 2400px;
+    height: 300px; }
+    .about img {
+      width: 250px;
+      height: 250px; }
+    .about .content {
+      width: 60%;
+      height: 300px;
+      margin: 30px 10px 30px 8px; }
+      .about .content h2 {
+        font-size: 25px; }
+      .about .content p {
+        margin: 20px 0;
+        font-size: 13px; }
+
+  .customer {
+    top: 2660px; }
+
+  footer {
+    top: 3320px; }
+    footer .footer {
+      font-size: 10px; }
+
+  .card {
+    width: 400px; }
+    .card .pic {
+      height: 130px; }
+
+  .touch .con {
+    width: 47%; } }
+@media (min-width: 500px) and (max-width: 700px) {
+  .header .items {
+    width: 200px;
+    margin: 15px 15px; }
+    .header .items .select .button {
+      font-size: 9px; }
+
+  .section {
+    margin: 100px; }
+    .section h2 {
+      font-size: 80px; }
+
+  .about {
+    top: 2827px;
+    height: 300px; }
+    .about img {
+      width: 172px;
+      height: 172px; }
+    .about .content {
+      width: 60%;
+      height: 255px;
+      margin: 30px 10px 30px 8px; }
+      .about .content h2 {
+        font-size: 25px; }
+      .about .content p {
+        margin: 20px 0;
+        font-size: 13px; }
+
+  .customer {
+    top: 3070px; }
+
+  footer {
+    top: 3810px; }
+    footer .footer {
+      font-size: 10px; }
+      footer .footer .midfooter {
+        width: 180px; }
+
+  .card {
+    width: 400px; }
+    .card .pic {
+      height: 150px; }
+
+  .touch .con {
+    width: 60%; } }
+@media (min-width: 280px) and (max-width: 424px) {
+  .container::before {
+    height: 330px; }
+
+  .main .left img {
+    height: 37px;
+    width: 38px; }
+  .main .middle {
+    font-size: 12px; }
+  .main .right img {
+    height: 17px;
+    width: 17px;
+    margin: 0 4px; }
+
+  .header {
+    top: 310px; }
+    .header .items {
+      width: 200px;
+      margin: 6px 6px; }
+      .header .items .select .button {
+        font-size: 9px; }
+
+  .section {
+    margin: 5px;
+    width: 97%; }
+    .section h2 {
+      font-size: 40px; }
+    .section button {
+      width: 150px; }
+
+  .about {
+    top: 4230px;
+    height: 385px; }
+    .about img {
+      width: 125px;
+      height: 186px; }
+    .about .content {
+      width: 48%;
+      height: 370px;
+      margin: 4px 5px 4px 8px; }
+      .about .content h2 {
+        font-size: 15px; }
+      .about .content p {
+        margin: 10px 0;
+        font-size: 13px; }
+
+  .customer {
+    top: 4550px; }
+    .customer h2 {
+      font-size: 15px; }
+
+  footer {
+    top: 5315px; }
+    footer .footer {
+      font-size: 10px; }
+      footer .footer .midfooter {
+        width: 115px;
+        margin: 10px; }
+
+  .card {
+    width: 260px;
+    margin: 15px auto; }
+    .card .pic {
+      height: 87px; }
+    .card img {
+      height: 65px;
+      width: 75px; }
+    .card .detail {
+      padding: 4px; } }
+.touch .con {
+  width: 60%; }
+
+@media (min-width: 424px) and (max-width: 500px) {
+  .container::before {
+    height: 330px; }
+
+  .main .left img {
+    height: 37px;
+    width: 38px; }
+  .main .middle {
+    font-size: 12px; }
+  .main .right img {
+    height: 17px;
+    width: 17px;
+    margin: 0 4px; }
+
+  .header {
+    top: 310px; }
+    .header .items {
+      width: 200px;
+      margin: 6px 6px; }
+      .header .items .select .button {
+        font-size: 9px; }
+
+  .section {
+    margin: 5px;
+    width: 97%; }
+    .section h2 {
+      font-size: 40px; }
+    .section button {
+      width: 150px; }
+
+  .about {
+    top: 2340px;
+    height: 365px; }
+    .about img {
+      width: 197px;
+      height: 210px; }
+    .about .content {
+      width: 48%;
+      height: 370px;
+      margin: 4px 5px 4px 8px; }
+      .about .content h2 {
+        font-size: 15px; }
+      .about .content p {
+        margin: 10px 0;
+        font-size: 13px; }
+
+  .customer {
+    top: 2640px; }
+    .customer h2 {
+      font-size: 15px; }
+
+  footer {
+    top: 3270px; }
+    footer .footer {
+      font-size: 10px; }
+      footer .footer .midfooter {
+        width: 180px; }
+
+  .card {
+    width: 260px;
+    margin: 15px auto; }
+    .card .pic {
+      height: 87px; }
+    .card img {
+      height: 65px;
+      width: 75px; }
+    .card .detail {
+      padding: 4px; } }
+.touch .con {
+  width: 60%; }
+
+/*# sourceMappingURL=style.css.map */

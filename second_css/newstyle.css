@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
+
+.form {
+  border: 2px solid red;
+  text-align: center;
+  background-color: antiquewhite; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap; }
+  .container .form-container {
+    width: 24%;
+    border: 2px solid green;
+    background-color: #438a3b;
+    margin: 10px auto; }
+  .container .form-element {
+    margin: 4px; }
+
+input[type="checkbox"]:checked + label {
+  visibility: hidden;
+  position: relative; }
+  input[type="checkbox"]:checked + label::after {
+    width: 84px;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Table View"; }
+
+.checkbox:checked ~ .container {
+  display: table;
+  width: 100%;
+  border-spacing: 25px; }
+  .checkbox:checked ~ .container .form-container {
+    display: table-row; }
+  .checkbox:checked ~ .container .form-element {
+    display: table-cell; }
+    .checkbox:checked ~ .container .form-element .labeling {
+      display: block; }
+
+/*# sourceMappingURL=newstyle.css.map */

@@ -1,0 +1,257 @@
+@import "variable";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container::before {
+  content: "";
+  background: url(background3.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+}
+
+.main {
+  height: 40px;
+  width: 100%;
+  background-color: $bisque;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  .left img {
+    height: 60px;
+    width: 60px;
+  }
+  .middle {
+    margin: 0 auto;
+    font-family:$font1;
+    font-size: 25px;
+  }
+
+  .right img {
+    height: 30px;
+    width: 30px;
+    margin: 0 15px;
+  }
+}
+
+.section {
+  width: 50%;
+  text-align: left;
+  margin: auto 200px;
+  position: absolute;
+  h2 {
+    font-family: $font2;
+    font-size: 150px;
+    font-weight: lighter;
+  }
+  p {
+    font-size: 15px;
+    font-family:$font3;
+  }
+  button {
+    width: 250px;
+    height: 50px;
+    background-color: $black;
+    color: $white;
+    margin-top: 20px;
+  }
+}
+
+.header {
+  padding-top: 20px;
+  width: 100%;
+  position: absolute;
+  top: 700px;
+  text-align: center;
+  h2 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .items {
+    border: 1px solid $black;
+    height: 296px;
+    width: 280px;
+    text-align: center;
+    margin: 40px 15px;
+    img {
+      height: 200px;
+      width: 200px;
+    }
+    .select {
+      display: flex;
+      background-color: $black;
+      height: 50px;
+      color: $white;
+
+      button {
+        border: 2px solid $black;
+        border-radius: 28px;
+        height: 30px;
+        width: 84px;
+        margin: auto 3px;
+      }
+      p {
+        align-self: center;
+        margin-left: 30px;
+      }
+    }
+  }
+  .more {
+    width: 160px;
+    height: 40px;
+    background-color: $black;
+    color: $white;
+    border-radius: 5px;
+  }
+}
+
+.about {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 2000px;
+  background-color: $bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    width: 30%;
+    height: 380px;
+    margin: 30px 10px 30px 300px;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+    button {
+      width: 160px;
+      height: 40px;
+      background-color: $black;
+      color: $white;
+      border-radius: 5px;
+    }
+  }
+  img {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+.customer {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 2400px;
+  text-align: center;
+  margin-top: 80px;
+  h2 {
+    font-size: 40px;
+    font-size: arial;
+  }
+}
+.card {
+  box-shadow: 2px 2px 5px 5px $shadow;
+  border: 2px solid $black;
+  width: 40%;
+  margin: 50px auto;
+  display: flex;
+  height: 200px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  .pic {
+    height: 120px;
+    border: 2px solid $black;
+    border-radius: 50%;
+    background-color: $bisque;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  .detail {
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+.arrow {
+  .leftArrow,
+  .rightArrow {
+    height: 30px;
+    width: 30px;
+    box-shadow: 2px 2px 2px 2px $shadow;
+    border-radius: 50%;
+  }
+}
+.touch {
+  margin-top: 40px;
+
+  .con {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    margin-right: 80px;
+    padding: 12px;
+  }
+  .contactform {
+    width: 140px;
+    height: 44px;
+    background-color: $black;
+    color: $white;
+  }
+  .newletter {
+    width: 140px;
+    height: 44px;
+    background-color: $bisque;
+  }
+}
+
+
+footer {
+  position: absolute;
+  top: 3100px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.footer {
+  align-items: center;
+  height: 300px;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  h3 {
+    margin-bottom: 15px;
+  }
+  .midfooter {
+    text-align: center;
+    width: 400px;
+    h2,
+    p,
+    div,
+    hr {
+      margin-bottom: 15px;
+    }
+    div p {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+}
+@import "media";

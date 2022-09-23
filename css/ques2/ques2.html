@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ques2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="vinsol-logo.png" alt="vinsol" />
+        <div class="first">
+          <div >Email us at:<span>sales@vinsol.com</span></div>
+          <div >Skype:<span>Vinsol</span></div>
+        </div>
+      </header>
+
+      <section>
+        <div class="head">Please fill the form below</div>
+        <div class="form-box">
+          <form>
+            <table>
+              <tr>
+                <th><label for="firstname">First Name</label></th>
+                <td><input type="text" name="firstname" id="firstname" class="text"/></td>
+              </tr>
+              <tr>
+                <th><label for="lastname">Last Name</label></th>
+                <td><input type="text" name="lastname" id="lastname" class="text"/></td>
+              </tr>
+              <tr>
+                <th><label for="Email">Email Address</label></th>
+                <td><input type="email" name="Email" id="Email" class="text"/></td>
+              </tr>
+              <tr>
+                <th><label for="password">Password</label></th>
+                <td><input type="password" name="password" id="password" class="text"/></td>
+              </tr>
+              <tr>
+                <th><label for="rad">Gender</label></th>
+                <td>
+                  <input type="radio" name="rad" id="rad" /><span class="gender">Male</span>
+                  <input type="radio" name="rad" id="rad" /><span class="gender">Female</span>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="dob">Date of Birth</label></th>
+                <td>
+                  <input
+                    type="number"
+                    name="dob"
+                    class="dob"
+                    placeholder="DD"
+                    min="01"
+                    max="31"
+                  />
+                  <input
+                    type="number"
+                    name="dob"
+                    class="dob"
+                    placeholder="MM"
+                    min="01"
+                    max="12"
+                  />
+                  <input
+                    type="number"
+                    name="dob"
+                    class="dob"
+                    placeholder="YY"
+                    min="01"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th class="address"><label for="address">Address</label></th>
+                <td>
+                  <textarea
+                    name="address"
+                    id="address"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <input type="submit" value="Submit Details" class="submit">
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box; }
+
+.form {
+  border: 2px solid red;
+  text-align: center; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap; }
+  .container .form-container {
+    width: 24%;
+    border: 2px solid green;
+    margin: 10px auto; }
+
+input[type="checkbox"]:checked + label {
+  visibility: hidden;
+  position: relative; }
+  input[type="checkbox"]:checked + label::after {
+    width: 84px;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "table view"; }
+
+.checkbox:checked ~ .container {
+  flex-direction: column; }
+  .checkbox:checked ~ .container .form-container {
+    width: 100%;
+    display: flex; }
+    .checkbox:checked ~ .container .form-container .form-element {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+    <style>
+      td input{
+        width:40vw;
+      }
+    </style>
+  </head>
+  <body>
+  <section style="border:2px solid grey">
+    <header style="background-color:grey">
+      <h2 style="text-align:center; color:white">HTML5 form</h2>
+    </header>
+    <main>
+      <form action="<?php echo htmlsecialchars($_SERVER['PHP_SELF']);?>" method="POST">
+      	<table style="margin-left:auto; margin-right:auto">
+        	<tr>
+          	<th> <label for="n1">First name:</label></th>
+        		<td><input type="text" name="n1" id="n1" autofocus="autofocus" required ></td>
+        	</tr>
+        	<tr>
+          	<th> <label for="l1">Last name:</label></th>
+        		<td><input type="text" name="l1" id="l1" required></td>
+        	</tr>
+        	<tr>
+          	<th> <label for="email">E-mail:</label></th>
+        		<td><input type="email" name="n1" id="n1" required></td>
+        	</tr>
+        	<tr>
+          	<th> <label for="p1">Password:</label></th>
+        		<td><input type="password" name="p1" id="p1" required></td>
+        	</tr>
+        	<tr>
+          	<th> <label for="w1">Website:</label></th>
+        		<td><input type="url" name="w1" id="w1" required></td>
+        	</tr>
+        	<tr>
+          	<th> <label for="pn1">Phone Number:</label></th>
+        		<td><input type="number" name="pn1" id="pn1" required></td>
+        	</tr>
+        	<tr>
+          	<th> <label for="d1">Date of Birth:</label></th>
+        		<td><input type="date" name="d1" id="d1" required></td>
+        	</tr>
+      	</table>
+      	<div style="text-align:center"><input type="submit" value="Submit Data"> </div>
+    	</form>
+  	</main>
+  </section>
+  </body>
+</html>
+
+    

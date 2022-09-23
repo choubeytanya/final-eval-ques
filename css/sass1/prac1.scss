@@ -1,0 +1,83 @@
+@import "colour";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+%placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin properties($bgcolour, $colours) {
+  background-color: $bgcolour;
+  color: $colours;
+}
+.items {
+  @extend %placeholder;
+  font-size: 20px;
+  font-weight: bold;
+  border: $border;
+}
+.container {
+  max-width: 960px;
+  background-color: $off-white;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12,60px);
+  grid-template-rows: repeat(6, 60px);
+  margin:0 auto;
+  justify-content: center;
+}
+.box1 {
+  grid-area: 1/1/2/13;
+  @include properties($black, $yellow);
+}
+.box2 {
+  grid-area: 2/1/3/12;
+  @include properties($red, $black);
+}
+.box3 {
+  grid-area: 2/12/3/13;
+  @include properties($black, $red);
+}
+.box4 {
+  grid-area: 3/1/4/9;
+  @include properties($aqua, $green);
+}
+.box5 {
+  grid-area: 3/9/5/13;
+  @include properties($green, $white);
+}
+.box6 {
+  grid-area: 4/1/5/5;
+  @include properties($green, $white);
+}
+.box7 {
+  grid-area: 4/5/5/7;
+  @include properties($yellow, $black);
+}
+.box8 {
+  grid-area: 4/7/5/9;
+  @include properties($yellow, $black);
+}
+.box9 {
+  grid-area: 5/1/6/7;
+  @include properties($purple, $aqua);
+}
+.box10 {
+  grid-area: 5/7/6/10;
+  @include properties($grey, $light-green);
+}
+.box11 {
+  grid-area: 5/10/6/13;
+  @include properties($grey, $red);
+}
+.box12 {
+  grid-area: 6/1/7/10;
+  @include properties($orange, $aqua);
+}
+.box13 {
+  grid-area: 6/10/7/13;
+  @include properties($grey, $blue);
+}

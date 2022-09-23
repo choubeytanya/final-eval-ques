@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.items {
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black; }
+
+.container {
+  max-width: 960px;
+  background-color: #f4fafa;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 60px);
+  grid-template-rows: repeat(6, 60px);
+  margin: 0 auto;
+  justify-content: center; }
+
+.box1 {
+  grid-area: 1/1/2/13;
+  background-color: black;
+  color: yellow; }
+
+.box2 {
+  grid-area: 2/1/3/12;
+  background-color: red;
+  color: black; }
+
+.box3 {
+  grid-area: 2/12/3/13;
+  background-color: black;
+  color: red; }
+
+.box4 {
+  grid-area: 3/1/4/9;
+  background-color: aqua;
+  color: green; }
+
+.box5 {
+  grid-area: 3/9/5/13;
+  background-color: green;
+  color: white; }
+
+.box6 {
+  grid-area: 4/1/5/5;
+  background-color: green;
+  color: white; }
+
+.box7 {
+  grid-area: 4/5/5/7;
+  background-color: yellow;
+  color: black; }
+
+.box8 {
+  grid-area: 4/7/5/9;
+  background-color: yellow;
+  color: black; }
+
+.box9 {
+  grid-area: 5/1/6/7;
+  background-color: #a257a2;
+  color: aqua; }
+
+.box10 {
+  grid-area: 5/7/6/10;
+  background-color: grey;
+  color: #4ff34f; }
+
+.box11 {
+  grid-area: 5/10/6/13;
+  background-color: grey;
+  color: red; }
+
+.box12 {
+  grid-area: 6/1/7/10;
+  background-color: #9e621d;
+  color: aqua; }
+
+.box13 {
+  grid-area: 6/10/7/13;
+  background-color: grey;
+  color: blue; }
+
+/*# sourceMappingURL=prac1.css.map */
